@@ -19,10 +19,10 @@ Qolgan elementlari esa o‘zidan oldingi ikki element yig‘indisiga teng bo‘l
 📥 Input: n = 6, X = 1, Y = 2
  📤 Output: [1, 2, 3, 5, 8, 13]*/
 
-/*function son(n) {
-  let result = [1, 2];
+/*function son(n, X, Y) {
+  let result = [X, Y];
   for (let i = 2; i < n; i++) {
-    result.push(i + i);
+    result.push(result[i - 1] + result[i - 2]);
   }
   return result;
 }
